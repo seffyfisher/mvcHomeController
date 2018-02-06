@@ -1,0 +1,30 @@
+﻿@using mvcHomeController.Models
+@model  StringIncome
+@{
+    ViewBag.Title = "String Info page";
+
+    string localTxt = Model.myString;
+    
+    char[] inputarray = localTxt.ToCharArray();
+    Array.Reverse(inputarray);
+    string output = new string(inputarray);
+}
+
+<h2>@ViewBag.Title</h2>
+<p>
+    Original Text : @Model.myString
+</p>
+<p>
+    Reverse Text : @output
+</p>
+<p>
+    UpperCase Text : @localTxt.ToUpper()
+</p>
+
+<p>
+    Lowercase Text : @localTxt.ToLower()
+</p>
+
+<p>
+    Text Length : @localTxt.Length
+</p>

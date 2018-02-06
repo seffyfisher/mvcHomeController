@@ -1,0 +1,16 @@
+﻿@using mvcHomeController.Models
+@model NumberIncome
+@{
+    ViewBag.Title = "NumInfo";
+}
+
+<h2>NumInfo</h2>
+<h3>@Model.myDouble</h3>
+
+<p>
+    is number is whole number : @Model.IsInt()
+</p>
+<p>
+    is number is even number : @Model.IsEvenNumber()
+</p>
+
